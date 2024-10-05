@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CompanyManagementApp.Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3751675b318130f91a4f5bbdc0286a64c277ae80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eff4fca10701258307edea903b2e1e61524a1713")]
 [assembly: System.Reflection.AssemblyProductAttribute("CompanyManagementApp.Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CompanyManagementApp.Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

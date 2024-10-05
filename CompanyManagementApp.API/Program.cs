@@ -17,10 +17,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Identity servislerini ekleyin
+// Identity servisleri
 builder.Services.AddIdentity<AppUser, AppRole>(options =>
 {
-    // Parola kurallarý gibi Identity seçeneklerini burada özelleþtirebilirsiniz
+    // Parola kurallarý
     options.Password.RequireDigit = true;
     options.Password.RequireLowercase = true;
     options.Password.RequireUppercase = true;
@@ -29,6 +29,9 @@ builder.Services.AddIdentity<AppUser, AppRole>(options =>
 })
 .AddEntityFrameworkStores<AppDbContext>() // Identity için AppDbContext kullanýlýyor
 .AddDefaultTokenProviders();
+
+// AutoMapper
+builder.Services.AddAutoMapper(typeof(Program)); // AutoMapper konfigürasyonu
 
 var app = builder.Build();
 
