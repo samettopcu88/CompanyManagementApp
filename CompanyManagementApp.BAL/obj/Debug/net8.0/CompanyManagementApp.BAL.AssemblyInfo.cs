@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CompanyManagementApp.BAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46e847ce57fee491528561d14ff40847fb02d81b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3751675b318130f91a4f5bbdc0286a64c277ae80")]
 [assembly: System.Reflection.AssemblyProductAttribute("CompanyManagementApp.BAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CompanyManagementApp.BAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
