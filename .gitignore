@@ -19,3 +19,8 @@
 /CompanyManagementApp.DAL/obj
 /CompanyManagementApp.Entities/bin
 /CompanyManagementApp.API/bin
+/CompanyManagementApp.Entities/obj
+/CompanyManagementApp.BAL/bin
+/CompanyManagementApp.BAL/obj
+/CompanyManagementApp.UI/bin
+/CompanyManagementApp.UI/obj
