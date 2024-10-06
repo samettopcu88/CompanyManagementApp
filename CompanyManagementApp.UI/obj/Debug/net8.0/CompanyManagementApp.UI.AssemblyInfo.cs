@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CompanyManagementApp.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eff4fca10701258307edea903b2e1e61524a1713")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66889662ae5a44020e23c83969a759ff04770905")]
 [assembly: System.Reflection.AssemblyProductAttribute("CompanyManagementApp.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CompanyManagementApp.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
