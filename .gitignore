@@ -26,3 +26,7 @@ CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.dll
 /CompanyManagementApp.DAL/bin
 /CompanyManagementApp.DAL/obj
 /CompanyManagementApp.Entities/bin
+CompanyManagementApp.API/obj/Debug/net8.0/CompanyManagementApp.API.AssemblyInfoInputs.cache
+CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.deps.json
+CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.deps.json
+CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.dll
