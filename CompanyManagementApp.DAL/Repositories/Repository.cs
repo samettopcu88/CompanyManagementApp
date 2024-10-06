@@ -1,10 +1,5 @@
 ﻿using CompanyManagementApp.DAL.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CompanyManagementApp.DAL.Repositories
 {
@@ -42,11 +37,6 @@ namespace CompanyManagementApp.DAL.Repositories
         public async Task DeleteAsync(T entity)
         {
             _dbSet.Remove(entity);
-        }
-
-        public async Task SaveChangesAsync()
-        {
-            await _context.SaveChangesAsync();
         }
     }
 }

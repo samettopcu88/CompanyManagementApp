@@ -1,10 +1,5 @@
 ﻿using CompanyManagementApp.DAL.Context;
 using CompanyManagementApp.Entities.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CompanyManagementApp.DAL.Repositories
 {
@@ -30,6 +25,10 @@ namespace CompanyManagementApp.DAL.Repositories
         public IRepository<ExpenseRequest> ExpenseRequests => _expenseRequests ??= new Repository<ExpenseRequest>(_context);
         public IRepository<Notification> Notifications => _notifications ??= new Repository<Notification>(_context);
         public IRepository<Resume> Resumes => _resumes ??= new Repository<Resume>(_context);
+        public IRepository<T> Repository<T>() where T : class
+        {
+            return new Repository<T>(_context);
+        }
 
         public async Task SaveChangesAsync()
         {

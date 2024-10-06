@@ -8,25 +8,15 @@ namespace CompanyManagementApp.API.Mapping
     {
         public MappingProfile()
         {
-            // Entity -> DTO
-            CreateMap<Company, CompanyDTO>();
-            CreateMap<Employee, EmployeeDTO>();
-            CreateMap<AppRole, AppRoleDTO>();
-            CreateMap<AppUser, AppUserDTO>();
-            CreateMap<ExpenseRequest, ExpenseRequestDTO>();
-            CreateMap<LeaveRequest, LeaveRequestDTO>();
-            CreateMap<Notification, NotificationDTO>();
-            CreateMap<Resume, ResumeDTO>();
-
-            // DTO -> Entity
-            CreateMap<CompanyDTO, Company>();
-            CreateMap<EmployeeDTO, Employee>();
-            CreateMap<AppRoleDTO, AppRole>();
-            CreateMap<AppUserDTO, AppUser>();
-            CreateMap<ExpenseRequestDTO, ExpenseRequest>();
-            CreateMap<LeaveRequestDTO, LeaveRequest>();
-            CreateMap<NotificationDTO, Notification>();
-            CreateMap<ResumeDTO, Resume>();
+            // Entity <-> DTO
+            CreateMap<Company, CompanyDTO>().ReverseMap();
+            CreateMap<Employee, EmployeeDTO>().ReverseMap();
+            CreateMap<AppRole, AppRoleDTO>().ReverseMap();
+            CreateMap<AppUser, AppUserDTO>().ReverseMap();
+            CreateMap<ExpenseRequest, ExpenseRequestDTO>().ReverseMap();
+            CreateMap<LeaveRequest, LeaveRequestDTO>().ReverseMap();
+            CreateMap<Notification, NotificationDTO>().ReverseMap();
+            CreateMap<Resume, ResumeDTO>().ReverseMap();
         }
     }
 }

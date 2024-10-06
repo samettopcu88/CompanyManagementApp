@@ -10,6 +10,6 @@
         public string Phone { get; set; }
         public int CompanyId { get; set; }
         public bool IsActive { get; set; }
-        // Company ve User gibi ilişkiler, detaylı DTO'lar ile gösterilebilir.
+
     }
 }

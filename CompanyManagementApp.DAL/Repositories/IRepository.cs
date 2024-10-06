@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CompanyManagementApp.DAL.Repositories
+﻿namespace CompanyManagementApp.DAL.Repositories
 {
     public interface IRepository<T> where T : class
     {
@@ -13,6 +7,5 @@ namespace CompanyManagementApp.DAL.Repositories
         Task AddAsync(T entity);
         Task UpdateAsync(T entity);
         Task DeleteAsync(T entity);
-        Task SaveChangesAsync();
     }
 }
