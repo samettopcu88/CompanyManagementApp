@@ -36,3 +36,8 @@ CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.exe
 CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.Entities.dll
 CompanyManagementApp.API/obj/Debug/net8.0/apphost.exe
 CompanyManagementApp.API/obj/Debug/net8.0/CompanyManagementApp.API.csproj.CoreCompileInputs.cache
+CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.deps.json
+CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.deps.json
+CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.exe
+CompanyManagementApp.Entities/bin/Debug/net8.0/CompanyManagementApp.Entities.pdb
+/CompanyManagementApp.API/bin
