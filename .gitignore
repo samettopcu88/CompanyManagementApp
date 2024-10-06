@@ -14,3 +14,6 @@
 .vs/ProjectEvaluation/companymanagementapp.strings.v9.bin
 *.vsidx
 /.vs/CompanyManagementApp/config
+CompanyManagementApp.API/bin/Debug/net8.0/AutoMapper.dll
+CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.deps.json
+CompanyManagementApp.API/bin/Debug/net8.0/CompanyManagementApp.API.dll
