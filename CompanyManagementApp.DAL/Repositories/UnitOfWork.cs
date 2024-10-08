@@ -1,15 +1,20 @@
 ﻿using CompanyManagementApp.DAL.Context;
 using CompanyManagementApp.Entities.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace CompanyManagementApp.DAL.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContext _context;
+        private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<AppRole> _roleManager;
 
-        public UnitOfWork(AppDbContext context)
+        public UnitOfWork(AppDbContext context, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager)
         {
             _context = context;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         private IRepository<Company> _companies;
@@ -25,6 +30,10 @@ namespace CompanyManagementApp.DAL.Repositories
         public IRepository<ExpenseRequest> ExpenseRequests => _expenseRequests ??= new Repository<ExpenseRequest>(_context);
         public IRepository<Notification> Notifications => _notifications ??= new Repository<Notification>(_context);
         public IRepository<Resume> Resumes => _resumes ??= new Repository<Resume>(_context);
+
+        public UserManager<AppUser> UserManager => _userManager;
+        public RoleManager<AppRole> RoleManager => _roleManager;
+
         public IRepository<T> Repository<T>() where T : class
         {
             return new Repository<T>(_context);

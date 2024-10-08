@@ -1,4 +1,5 @@
 ﻿using CompanyManagementApp.Entities.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace CompanyManagementApp.DAL.Repositories
 {
@@ -10,6 +11,8 @@ namespace CompanyManagementApp.DAL.Repositories
         IRepository<ExpenseRequest> ExpenseRequests { get; }
         IRepository<Notification> Notifications { get; }
         IRepository<Resume> Resumes { get; }
+        UserManager<AppUser> UserManager { get; }
+        RoleManager<AppRole> RoleManager { get; }
         IRepository<T> Repository<T>() where T : class;
         Task SaveChangesAsync();
     }
